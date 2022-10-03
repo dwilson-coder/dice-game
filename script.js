@@ -1,6 +1,6 @@
 'use strict';
 
-// Global settings
+// Selecting elements
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 const score0El = document.querySelector('#score--0');
@@ -80,8 +80,7 @@ btnHold.addEventListener('click', function () {
       // Finish the game
       playing = false;
       diceEl.classList.add('hidden');
-      initConfetti();
-      render();
+
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
